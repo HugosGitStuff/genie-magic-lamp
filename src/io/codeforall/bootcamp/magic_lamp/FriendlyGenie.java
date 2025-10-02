@@ -1,13 +1,7 @@
 package io.codeforall.bootcamp.magic_lamp;
 
 /**
- * FriendlyGenie is a type of Genie that grants all wishes until they run out.
- * This class demonstrates inheritance and method overriding.
- * 
- * Key features:
- * - Inherits from base Genie class
- * - Grants wishes freely until maxWishes is reached
- * - Has type identifier 1 for friendly genies
+ * A genie that grants all wishes until reaching maximum limit.
  */
 public class FriendlyGenie extends Genie {
     /**

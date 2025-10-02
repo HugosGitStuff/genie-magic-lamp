@@ -1,18 +1,11 @@
 package io.codeforall.bootcamp.magic_lamp;
 
 /**
- * Base class for all Genie types in the system.
- * This is an example of inheritance and polymorphism in Object-Oriented Programming.
- * 
- * Key concepts:
- * - Abstract base class that defines common behavior for all genies
- * - Manages wish granting functionality and wish counting
- * - Uses polymorphism through method overriding in child classes
+ * Base class for all genie types, providing common wish granting functionality.
  */
 public class Genie {
-    // Instance variables for wish management
-    private int maxWishes;        // Maximum number of wishes this genie can grant
-    private int remainingWishes;  // Number of wishes left to grant
+    private int maxWishes;
+    private int remainingWishes;
 
     /**
      * Constructor: Creates a new Genie with specified number of wishes

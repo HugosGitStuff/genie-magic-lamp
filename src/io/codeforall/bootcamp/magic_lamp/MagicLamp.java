@@ -1,20 +1,14 @@
 package io.codeforall.bootcamp.magic_lamp;
 
 /**
- * MagicLamp represents a magical lamp that can create different types of genies.
- * This class demonstrates object creation, inheritance, and state management.
- * 
- * Key features:
- * - Creates alternating types of genies (Friendly and Grumpy)
- * - Can be recharged using a RecyclableAngel
- * - Keeps track of remaining genies and recharge count
+ * Creates and manages genies, alternating between Friendly and Grumpy types.
+ * When empty, produces a RecyclableAngel that can recharge the lamp.
  */
 public class MagicLamp {
-    // Instance variables to track lamp state
-    private int maxGenies;        // Maximum number of genies the lamp can create
-    private int remainingGenies;  // Current number of genies left in the lamp
-    private int rechargeCount;    // Number of times the lamp has been recharged
-    private int genieCount;       // Total number of genies created (used for alternating types)
+    private int maxGenies;
+    private int remainingGenies;
+    private int rechargeCount;
+    private int genieCount;
 
     /**
      * Constructor: Creates a new MagicLamp with specified capacity

@@ -1,14 +1,7 @@
 package io.codeforall.bootcamp.magic_lamp;
 
 /**
- * GrumpyGenie is a type of Genie that only grants one wish, regardless of maxWishes.
- * This class demonstrates inheritance and different behavior implementation.
- * 
- * Key features:
- * - Inherits from base Genie class
- * - Only grants one wish total, then refuses all others
- * - Uses a boolean flag to track if wish was granted
- * - Has type identifier 2 for grumpy genies
+ * A grumpy genie that only grants one wish total, then refuses all others.
  */
 public class GrumpyGenie extends Genie {
     // Instance variable to track if the single wish was granted
@@ -35,6 +28,7 @@ public class GrumpyGenie extends Genie {
             setRemainingWishes(getRemainingWishes() - 1);  // Update wish count
             return true;
         }
+        System.out.println("I'm tired! F**k off!");
         return false;  // Always refuse after first wish
     }
 

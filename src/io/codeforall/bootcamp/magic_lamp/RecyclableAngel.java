@@ -1,15 +1,7 @@
 package io.codeforall.bootcamp.magic_lamp;
 
 /**
- * RecyclableAngel is a special type of Genie that can grant unlimited wishes until recycled.
- * This class demonstrates advanced inheritance and state management.
- * 
- * Key features:
- * - Inherits from base Genie class
- * - Can grant unlimited wishes until recycled
- * - Can be recycled once to recharge the MagicLamp
- * - Has type identifier 3 for angels
- * - Demonstrates state management with recycled flag
+ * A special genie that grants unlimited wishes until recycled to recharge the lamp.
  */
 public class RecyclableAngel extends Genie {
     // Instance variable to track if angel has been recycled
@@ -33,10 +25,10 @@ public class RecyclableAngel extends Genie {
     public boolean grantWish() {
         // Can't grant wishes if recycled
         if (recycled) {
+            System.out.println("This angel has been recycled and can no longer grant wishes!");
             return false;
         }
-        // Angel can grant unlimited wishes until recycled
-        setRemainingWishes(getRemainingWishes() - 1);  // Update wish count (though unlimited)
+        // Angel can grant unlimited wishes until recycled, regardless of maxWishes
         return true;
     }
 
